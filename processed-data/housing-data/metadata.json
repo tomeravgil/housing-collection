@@ -1,0 +1,48 @@
+{
+  "title": "Aggregated U.S. Housing Prices (City-State-Year)",
+  "description": "City-level aggregation of U.S. housing prices derived from Redfin ZIP Code Market Tracker data and merged with SimpleMaps ZIP–City mapping. Each record represents the average median sale price for a city and year, along with the number of contributing ZIP codes.",
+  "version": "1.0.0",
+  "created": "2025-10-04",
+  "modified": "2025-10-04",
+  "contributors": [
+    {
+      "name": "Tomer Avgil",
+      "role": "Researcher & Data Curator",
+      "institution": "Rensselaer Polytechnic Institute",
+      "email": "tomeravgil@gmail.com"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Redfin ZIP Code Market Tracker",
+      "url": "https://www.redfin.com/news/data-center/",
+      "license": "Publicly available; attribution required"
+    },
+    {
+      "name": "SimpleMaps US ZIP Database (Free)",
+      "url": "https://simplemaps.com/data/us-zips",
+      "license": "Free use with attribution"
+    }
+  ],
+  "schema": {
+    "columns": {
+      "CITY": "City name",
+      "STATE": "State full name",
+      "YEAR": "Year of record (YYYY)",
+      "avg_price": "Average median sale price across ZIP codes in the city",
+      "zip_count": "Number of ZIP codes contributing to the average"
+    },
+    "encoding": "UTF-8",
+    "format": "CSV"
+  },
+  "coverage": {
+    "geographic": "United States",
+    "temporal": "2012–2025",
+    "granularity": "City"
+  },
+  "preservation": {
+    "storage": ["Local disk", "GitHub repository"],
+    "redundancy": "Local + cloud backup",
+    "format_durability": "CSV and JSON formats ensure long-term readability"
+  }
+}
