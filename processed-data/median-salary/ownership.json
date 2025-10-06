@@ -1,0 +1,20 @@
+{
+    "dataset": "acs1y_median_income_city_2010_2023.csv",
+    "derived_from": [
+      "U.S. Census Bureau American Community Survey (ACS) 1-Year Subject Tables S1901"
+    ],
+    "data_owner": {
+      "name": "Elizabeth Lottinger",
+      "role": "Researcher & Data Curator",
+      "institution": "Rensselaer Polytechnic Institute",
+      "email": "lottie@rpi.edu"
+    },
+    "copyright": "© 2025 Elizabeth Lottinger. This dataset is distributed under CC BY 4.0 License.",
+    "usage_rights": {
+      "raw_data": "Original data belongs to the U.S. Census Bureau and is in the public domain.",
+      "derived_data": "Derived dataset (aggregated by city) may be used for academic, research, and educational purposes with attribution."
+    },
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "citation": "Lottinger, E. (2025). Aggregated U.S. Median Household Income by City-State-Year (ACS 1-Year Estimates)."
+  }
+  
