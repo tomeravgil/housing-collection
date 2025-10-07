@@ -1,0 +1,20 @@
+# Cost of Living Data Sources
+
+## FRED (Federal Reserve Economic Data)
+
+### Real Personal Consumption Expenditures (PCEC96)
+- Series ID: PCEC96
+- Description: Real Personal Consumption Expenditures (chained 2017 dollars)
+- URL: https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCEC96
+- Direct Link: https://fred.stlouisfed.org/series/PCEC96
+
+### Nominal Personal Consumption Expenditures (PCE)
+- Series ID: PCE
+- Description: Nominal Personal Consumption Expenditures
+- URL: https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCE
+- Direct Link: https://fred.stlouisfed.org/series/PCE
+
+## Notes
+- Data is fetched programmatically via FRED CSV API
+- Time series data is aggregated to yearly averages
+- Both real (inflation-adjusted) and nominal values are collected

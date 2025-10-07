@@ -4,7 +4,7 @@ import os
 from tqdm import tqdm
 
 # Directory to save results
-data_dir = "/Users/elizabeth/Downloads/data_salary/housing-collection/processed-data/median-salary"
+data_dir = "../../processed-data/median-salary"
 os.makedirs(data_dir, exist_ok=True)
 
 # Years to download

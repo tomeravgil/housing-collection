@@ -1,0 +1,24 @@
+{
+  "dataset": "us_consumer_spending.csv",
+  "derived_from": [
+    "Federal Reserve Economic Data (FRED) - PCEC96 (Real Personal Consumption Expenditures)",
+    "Federal Reserve Economic Data (FRED) - PCE (Nominal Personal Consumption Expenditures)"
+  ],
+  "data_owner": {
+    "name": "Tomer Avgil",
+    "role": "Researcher and Data Curator",
+    "institution": "Rensselaer Polytechnic Institute",
+    "email": "tomeravgil@gmail.com"
+  },
+  "copyright": "© 2025 Tomer Avgil. This dataset is distributed under CC BY 4.0 License.",
+  "usage_rights": {
+    "raw_data": "Original data belongs to the U.S. Bureau of Economic Analysis and is provided by the Federal Reserve Bank of St. Louis. Data is in the public domain.",
+    "derived_data": "Derived dataset (yearly aggregation) may be used for academic, research, and educational purposes with attribution."
+  },
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "citation": "Avgil, T. (2025). U.S. Consumer Spending Dataset (Real and Nominal Personal Consumption Expenditures). Derived from Federal Reserve Economic Data (FRED).",
+  "attribution_required": {
+    "derived_dataset": "Avgil, T. (2025)",
+    "original_data": "U.S. Bureau of Economic Analysis via Federal Reserve Bank of St. Louis"
+  }
+}

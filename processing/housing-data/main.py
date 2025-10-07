@@ -1,7 +1,7 @@
 import polars as pl
 from redfin import RedfinProcessor
 from zillow import ZillowProcessor
-
+import os
 STATE_MAP = {
     "Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR", "California": "CA",
     "Colorado": "CO", "Connecticut": "CT", "Delaware": "DE", "Florida": "FL", "Georgia": "GA",
@@ -153,7 +153,10 @@ result = (
 )
 
 # === Save ===
-output_path = "combined_housing_data.csv"
+# Create processed-data directory if it doesn't exist
+os.makedirs("../../processed-data/housing-data", exist_ok=True)
+
+output_path = "../../processed-data/housing-data/housing_prices_city_aggregated.csv"
 result = result.unique(["City", "State", "YEAR"])
 
 result.write_csv(output_path)

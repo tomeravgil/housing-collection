@@ -1,0 +1,37 @@
+# Median Salary Data Sources
+
+## U.S. Census Bureau - American Community Survey (ACS)
+
+### ACS 1-Year Subject Tables - Median Household Income
+- Variable: S1901_C01_012E (Median household income in the past 12 months)
+- Base URL Pattern: https://api.census.gov/data/{year}/acs/acs1/subject
+- Geographic Level: Place (city-level)
+- Years: 2010-2023 (excluding 2020 - not available due to COVID-19 data collection issues)
+
+### API Calls Used (2010-2023)
+```
+https://api.census.gov/data/2010/acs/acs1/subject?get=NAME,S1901_C01_012E&for=place:*
+https://api.census.gov/data/2011/acs/acs1/subject?get=NAME,S1901_C01_012E&for=place:*
+https://api.census.gov/data/2012/acs/acs1/subject?get=NAME,S1901_C01_012E&for=place:*
+https://api.census.gov/data/2013/acs/acs1/subject?get=NAME,S1901_C01_012E&for=place:*
+https://api.census.gov/data/2014/acs/acs1/subject?get=NAME,S1901_C01_012E&for=place:*
+https://api.census.gov/data/2015/acs/acs1/subject?get=NAME,S1901_C01_012E&for=place:*
+https://api.census.gov/data/2016/acs/acs1/subject?get=NAME,S1901_C01_012E&for=place:*
+https://api.census.gov/data/2017/acs/acs1/subject?get=NAME,S1901_C01_012E&for=place:*
+https://api.census.gov/data/2018/acs/acs1/subject?get=NAME,S1901_C01_012E&for=place:*
+https://api.census.gov/data/2019/acs/acs1/subject?get=NAME,S1901_C01_012E&for=place:*
+https://api.census.gov/data/2021/acs/acs1/subject?get=NAME,S1901_C01_012E&for=place:*
+https://api.census.gov/data/2022/acs/acs1/subject?get=NAME,S1901_C01_012E&for=place:*
+https://api.census.gov/data/2023/acs/acs1/subject?get=NAME,S1901_C01_012E&for=place:*
+```
+
+### Parameters
+- `get`: NAME,S1901_C01_012E (location name and median income)
+- `for`: place:* (all places/cities)
+- Note: 2020 is skipped (404 error - data not available)
+
+## Notes
+- Data is fetched programmatically via Census API
+- 2020 data is unavailable (ACS 1-Year estimates were not released)
+- Data includes median household income for cities across all U.S. states
+- No API key required for basic usage

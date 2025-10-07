@@ -1,0 +1,55 @@
+{
+  "title": "U.S. Consumer Spending (Real and Nominal Personal Consumption Expenditures)",
+  "description": "Yearly aggregation of U.S. consumer spending derived from Federal Reserve Economic Data (FRED). Includes both real (inflation-adjusted, chained 2017 dollars) and nominal personal consumption expenditures. Monthly values are averaged to produce yearly estimates.",
+  "version": "1.0.0",
+  "created": "2025-10-07",
+  "modified": "2025-10-07",
+  "contributors": [
+    {
+      "name": "Tomer Avgil",
+      "role": "Researcher & Data Curator",
+      "institution": "Rensselaer Polytechnic Institute",
+      "email": "tomeravgil@gmail.com"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Federal Reserve Economic Data (FRED) - Real Personal Consumption Expenditures",
+      "series_id": "PCEC96",
+      "url": "https://fred.stlouisfed.org/series/PCEC96",
+      "provider": "U.S. Bureau of Economic Analysis via Federal Reserve Bank of St. Louis",
+      "license": "Public domain; attribution recommended"
+    },
+    {
+      "name": "Federal Reserve Economic Data (FRED) - Nominal Personal Consumption Expenditures",
+      "series_id": "PCE",
+      "url": "https://fred.stlouisfed.org/series/PCE",
+      "provider": "U.S. Bureau of Economic Analysis via Federal Reserve Bank of St. Louis",
+      "license": "Public domain; attribution recommended"
+    }
+  ],
+  "schema": {
+    "columns": {
+      "year": "Year of record (YYYY)",
+      "real_consumer_spending": "Real Personal Consumption Expenditures in billions of chained 2017 dollars",
+      "nominal_consumer_spending": "Nominal Personal Consumption Expenditures in billions of current dollars"
+    },
+    "encoding": "UTF-8",
+    "format": "CSV"
+  },
+  "coverage": {
+    "geographic": "United States (national level)",
+    "temporal": "1959-present (varies by series)",
+    "granularity": "Yearly (aggregated from monthly data)"
+  },
+  "preservation": {
+    "storage": ["Local disk", "GitHub repository"],
+    "redundancy": "Local + cloud backup",
+    "format_durability": "CSV and JSON formats ensure long-term readability"
+  },
+  "processing": {
+    "aggregation_method": "Monthly values averaged to yearly",
+    "units": "Billions of dollars",
+    "base_year_real": "2017 (chained dollars)"
+  }
+}
