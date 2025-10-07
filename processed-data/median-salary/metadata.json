@@ -1,0 +1,43 @@
+{
+    "title": "Aggregated U.S. Median Household Income by City-State-Year",
+    "description": "City-level aggregation of U.S. median household income derived from the U.S. Census Bureau American Community Survey (ACS) 1-Year Subject Tables (S1901). Each record represents the estimated median household income for a city and year.",
+    "version": "1.0.0",
+    "created": "2025-10-05",
+    "modified": "2025-10-05",
+    "contributors": [
+      {
+        "name": "Elizabeth Lottinger",
+        "role": "Researcher & Data Curator",
+        "institution": "Independent / Rensselaer Polytechnic Institute",
+        "email": "your_email@example.com"
+      }
+    ],
+    "sources": [
+      {
+        "name": "U.S. Census Bureau American Community Survey 1-Year Estimates",
+        "url": "https://data.census.gov/",
+        "license": "Public domain; attribution recommended"
+      }
+    ],
+    "schema": {
+      "columns": {
+        "City": "City name",
+        "State": "State full name",
+        "Year": "Year of record (YYYY)",
+        "Median_Income": "Estimated median household income in USD"
+      },
+      "encoding": "UTF-8",
+      "format": "CSV"
+    },
+    "coverage": {
+      "geographic": "United States",
+      "temporal": "2010-2023",
+      "granularity": "City"
+    },
+    "preservation": {
+      "storage": ["Local disk", "GitHub repository"],
+      "redundancy": "Local + cloud backup",
+      "format_durability": "CSV and JSON formats ensure long-term readability"
+    }
+  }
+  
